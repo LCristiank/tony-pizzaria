@@ -1,6 +1,81 @@
+@font-face {
+    font-family: lobster;
+    src: url("../assets/fonts/Lobster-Regular.ttf");
+}
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol, li{
+    list-style: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+
+}
+
+header{
+    position: fixed;
+    width: calc(100% - 160px);
+    display: flex;
+    top: 68px;
+    justify-content: space-between;
+    align-items: center;
+}
+header img.icon-pizza {
+    transform: rotate(-45deg);
+    height: 70px;
+    color: #ff8400;
+    
+}
+header h3{
+    font-size: 30px;
+    width: 10px;
+    font-family: "lobster";
+    color: #ff8400;
+}
+header div{
+    display: flex;
+}
+header ol{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+  
+}
+header li:hover{
+    color: black;
+    padding: 4px;
+    transition: .7s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.506);
+    background-color: rgb(255, 233, 214);
+}
+header .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;  
+    background-color: rgb(255, 223, 188);
+    box-shadow: 0px 4px 5px #0005;
+    border-radius: 15px;
+    padding: 4px 8px;
+}
+
+header, li, p{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header .icon-usuario {
+    height: 56px;
 }
