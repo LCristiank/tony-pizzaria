@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="content-empty"></div>
         <header>
                 <div>
                     <img src="./assets/icons/pizza-svgrepo-com.svg" alt="Pizza" class="icon-pizza icon">
                 <h3> Tony Pizzaria </h3>
                 </div>
             <div>
-                <ol>
+                <menu>
                     <a href="#">
                         <li>Home</li>
                     </a>
@@ -30,7 +32,7 @@
                     <a href="#">
                         <li>Contado</li>
                     </a>
-                </ol>
+                </menu>
             </div>
             <div class="login">
                 <img src="./assets/icons/user-svgrepo-com (1).svg" alt="Usuario" class="icon-usuario icon">
@@ -38,51 +40,54 @@
             </div>
 
         </header>
-        <!-- <section class="home--container">
         <main>
-            <article class="">
-                <h1>
-                    Não é apenas uma <span>Pizza</span>, é 
-                    uma experiência!
-                </h1>
-                <img src="./assets/images/pizza_frango.png" alt="Pizza de Queijo" class="">       
-            </article>
-            <article>
-                <div>
-                    <img src="./assets/icons/plus-svgrepo-com.svg" alt="Sinal de mais" class="icon-mais icon">
-                    <img src="./assets/images/Pizza_de_pepperoni_al_horno.webp" alt="">
-                    <p>
-                        Pizzaria de Pepperoni 
-                    </p>
-                    <span>R$ 16,00</span>
+            
+            <section class="home">
+                <div class="container-slogan">
+                    <h2 class="slogan">
+                        Não é apenas uma <span>Pizza</span>, é uma experiência!
+                    </h2>
+                    <img src="./assets/images/pizza-main.png" alt="">
                 </div>
-                <div>
-                    <img src="./assets/icons/plus-svgrepo-com.svg" alt="Sinal de mais" class="icon-mais icon">
-                    <img src="./assets/images/Pizza_de_pepperoni_al_horno.webp" alt="">
-                    <p>
-                        Pizzaria de Pepperoni 
-                    </p>
-                    <span>R$ 16,00</span>
-                </div>
-                <div>
-                    <img src="./assets/icons/plus-svgrepo-com.svg" alt="Sinal de mais" class="icon-mais icon">
-                    <img src="./assets/images/Pizza_de_pepperoni_al_horno.webp" alt="">
-                    <p>
-                        Pizzaria de Pepperoni 
-                    </p>
-                    <span>R$ 16,00</span>
-                </div>
-                <div>
-                    <img src="./assets/icons/plus-svgrepo-com.svg" alt="Sinal de mais" class="icon-mais icon"> 
-                    <img src="./assets/images/Pizza_de_pepperoni_al_horno.webp" alt="">
-                    <p>
-                        Pizzaria de Pepperoni 
-                    </p>
-                    <span>R$ 16,00</span>
-                </div>
-            </article>
-        </main>
+                <div class="container-pizzas">
 
-        </section> -->
+
+                    <div class="pizza">
+                        <div class="add-pizza">+</div>
+                        <img src="./assets/images/Pizza_de_pepperoni_al_horno.webp" alt="">
+                        <div class="container--info">
+                            <p>
+                                Pizza Calabresa 
+                                com Queijo
+                            </p>
+                            <span>
+                                R$ 20,00
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="pizza">
+                        <div class="add-pizza">+</div>
+                        <img src="./assets/images/pizza-portuguesa-0508-1024x683.jpg" alt="">
+                    </div>
+                    <div class="pizza">
+                        <div class="add-pizza">+</div>
+                        <img src="./assets/images/Pizza_de_pepperoni_al_horno.webp" alt="">
+                    </div>
+                    <div class="pizza">
+                        <div class="add-pizza">+</div>
+                        <img src="./assets/images/pizza-portuguesa-0508-1024x683.jpg" alt="">
+                    </div>
+                    <div class="pizza">
+                        <div class="add-pizza">+</div>
+                        <img src="./assets/images/Pizza_de_pepperoni_al_horno.webp" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="cardapio"></section>
+            <section class="servicos"></section>
+        
+        </main>
 </body>
 </html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/source/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    
+    <title>Document</title>
+<link rel="stylesheet" href="./Document_files/global.css"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./Document_files/css2" rel="stylesheet"></head>
+<body>
+        <header>
+                <div>
+                    <img src="./Document_files/pizza-svgrepo-com.svg" alt="Pizza" class="icon-pizza icon">
+                <h3> Tony Pizzaria </h3>
+                </div>
+            <div>
+                <menu>
+                    <a href="http://127.0.0.1:5500/source/index.html#">
+                        <li>Home</li>
+                    </a>
+                    <a href="http://127.0.0.1:5500/source/index.html#">
+                        <li>Cardapio</li>
+                    </a>
+                    <a href="http://127.0.0.1:5500/source/index.html#">
+                        <li>Serviços</li>
+                    </a>
+                    <a href="http://127.0.0.1:5500/source/index.html#">
+                        <li>Localização</li>
+                    </a>
+                    <a href="http://127.0.0.1:5500/source/index.html#">
+                        <li>Contado</li>
+                    </a>
+                </menu>
+            </div>
+            <div class="login">
+                <img src="./Document_files/user-svgrepo-com (1).svg" alt="Usuario" class="icon-usuario icon">
+                <p><span>LOGIN</span></p>
+            </div>
+
+        </header>
+        <main>
+            
+            <section class="home">
+                <div class="container-slogan">
+                    <h2 class="slogan">
+                        Não é apenas uma <span>Pizza</span>, é uma experiência
+                    </h2>
+                    <img src="./Document_files/pizza-main.png" alt="">
+                </div>
+                <div class="container-pizzas">
+                    <div class="pizza">
+                        <div class="add-pizza">+</div>
+                        <img src="./Document_files/Pizza_de_pepperoni_al_horno.webp" alt="">
+                    </div>
+                    <div class="pizza">
+                        <div class="add-pizza">+</div>
+                        <img src="./Document_files/pizza-portuguesa-0508-1024x683.jpg" alt="">
+                    </div>
+                    <div class="pizza">
+                        <div class="add-pizza">+</div>
+                        <img src="./Document_files/Pizza_de_pepperoni_al_horno.webp" alt="">
+                    </div>
+                    <div class="pizza">
+                        <div class="add-pizza">+</div>
+                        <img src="./Document_files/pizza-portuguesa-0508-1024x683.jpg" alt="">
+                    </div>
+                    <div class="pizza">
+                        <div class="add-pizza">+</div>
+                        <img src="./Document_files/Pizza_de_pepperoni_al_horno.webp" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="cardapio"></section>
+            <section class="servicos"></section>
+        
+        </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

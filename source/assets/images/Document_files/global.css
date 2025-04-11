@@ -111,12 +111,12 @@ section {
     display: flex;
     justify-content: end;
     align-items: center;
-    margin: 252px 364px 0 40px;
 }
 .container-slogan img{
     width: 25vw;
     align-self: center;
     justify-self: center;
+    margin: 0 300px 0 0px;
     align-self: center;
     justify-self: center;
 }
@@ -124,9 +124,8 @@ section {
     font-weight: 400;
     font-style: italic;
     height: 434px;
-    width: 620px;
+    width: 600px;
     font-size: 4rem;
-    padding: 30px;
 }
 
 .container-pizzas{
@@ -135,69 +134,28 @@ section {
     top: 20px;
     justify-content: space-around;
     align-items: center;
-}
-.pizza{
     position: relative;
-    overflow: hidden;
-    transition: 0.5s;
 }
 .pizza img { 
     height: 200px;
     border-radius: 30px;
     box-shadow: var(--default-shadow);
-}
 
+}
 .add-pizza{
-    width: 50px;
-    height: 50px;
-    background-color: var(--primary-color);
-    border-radius: 17px;
-    border: 4px solid white;
-    color: white;
-    font-size: 2rem;
     display: grid;
     place-content: center;
+    top: 820px;
+    z-index: 1;
+    font-size: 3rem;
     position: absolute;
-    right: -16px;
-    top: -16px;
-    opacity: 0;
-    transition: 0.5s;
-    
-}
-.pizza:hover, .add-pizza{
-    opacity: 1;
-}
-.pizza:hover, .container--info{
-    bottom: 0;
-    overflow: visible;
-}
-.container--info{
-    display: flex;
-    position: absolute;
-    height: 80px;
-    width: 100%;
-    top: 120px;
-    border-radius: 20px;
-    transition: 0.5s;
-    background-color: #0009;
-    transition: opacity 0.5s;
-    overflow: hidden;
-}
-.container--info p{
-    width: 180px;
-    color: white;
-    margin: 10px;
-}
-.container--info span{
-    justify-self: center;
-    align-self: center;
+    width: 60px;
+    height: 60px;
     background-color: #F07807;
+    border: 4px solid white;
     color: white;
-    height: 30px;
-    padding: 5px 5px 5px 5px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
-
 span {
     color: #F07807;
 }
